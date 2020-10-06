@@ -9,33 +9,12 @@
   text-transform: capitalize;
 }
 
-.sidebar .sidebar-drop .sidebar-drop-controls {
-  display: flex;
+.sidebar .nav .caret,
+.off-canvas-sidebar .nav .caret {
+  top: 18px;
 }
 
-.sidebar .sidebar-drop p {
-  margin-right: auto !important;
-}
-
-.sidebar .sidebar-drop p + i {
-  font-size: 1rem;
-  margin-right: 0px !important;
-}
-
-.sidebar .sidebar-drop.show p + i {
-  transform: rotate(-180deg);
-}
-
-.sidebar .sidebar-drop + .sidebar-drop-content {
-  display: none;
-  list-style: none;
-  padding-left: 1rem;
-}
-
-.sidebar .sidebar-drop + .sidebar-drop-content li a {
+.sidebar #submenu a {
   margin-top: 0px;
-}
-
-.sidebar .sidebar-drop.show + .sidebar-drop-content {
-  display: block;
+  padding-left: 1.5rem;
 }
