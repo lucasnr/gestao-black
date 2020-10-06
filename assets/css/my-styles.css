@@ -1,0 +1,41 @@
+#logo {
+  height: 100%;
+  width: 2.75rem;
+}
+
+.sidebar .nav li > a,
+.off-canvas-sidebar .nav li > a {
+  font-size: 0.875rem;
+  text-transform: capitalize;
+}
+
+.sidebar .sidebar-drop .sidebar-drop-controls {
+  display: flex;
+}
+
+.sidebar .sidebar-drop p {
+  margin-right: auto !important;
+}
+
+.sidebar .sidebar-drop p + i {
+  font-size: 1rem;
+  margin-right: 0px !important;
+}
+
+.sidebar .sidebar-drop.show p + i {
+  transform: rotate(-180deg);
+}
+
+.sidebar .sidebar-drop + .sidebar-drop-content {
+  display: none;
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.sidebar .sidebar-drop + .sidebar-drop-content li a {
+  margin-top: 0px;
+}
+
+.sidebar .sidebar-drop.show + .sidebar-drop-content {
+  display: block;
+}
