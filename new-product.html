@@ -54,7 +54,7 @@
               </div>
             </li>
             <li class="active">
-              <a href="#">
+              <a href="./sales.html">
                 <i class="tim-icons icon-wallet-43"></i>
                 <p>Vendas</p>
               </a>
@@ -150,153 +150,89 @@
 
         <div class="content">
           <div class="container">
-            <h1 class="mt-4 mt-lg-0">Vendas</h1>
-
-            <section
-              class="d-flex flex-column flex-sm-row align-items-sm-center"
-            >
-              <form
-                id="search-form"
-                class="d-flex align-items-center flex-grow-1 mr-sm-3"
-              >
-                <button type="submit">
-                  <i class="tim-icons icon-zoom-split mr-3 fa-2x"></i>
-                </button>
-                <input type="text" class="form-control" />
-              </form>
-
-              <a
-                href="./new-sale.html"
-                class="btn btn-info btn-round mt-3 mt-sm-0 ml-auto"
-              >
-                Adicionar venda
-              </a>
-            </section>
-
-            <section>
-              <div class="table-responsive">
-                <table class="table table-shopping mt-5">
-                  <thead>
-                    <tr>
-                      <th>Id</th>
-                      <th>Data</th>
-                      <th>Cliente</th>
-                      <th>Total</th>
-                      <th>Lucro %</th>
-                      <th>Ações</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td>11/03/2020</td>
-                      <td>John</td>
-                      <td>R$ 09,00</td>
-                      <td>55,43</td>
-                      <td>
-                        <div class="d-flex align-items center">
-                          <button
-                            class="btn btn-info btn-fab btn-icon btn-round"
-                          >
-                            <i class="tim-icons icon-pencil"></i>
-                          </button>
-                          <button
-                            class="btn btn-danger btn-fab btn-icon btn-round ml-2"
-                          >
-                            <i class="tim-icons icon-trash-simple"></i>
-                          </button>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>3</td>
-                      <td>11/03/2020</td>
-                      <td>Roger</td>
-                      <td>R$ 09,00</td>
-                      <td>55,43</td>
-                      <td>
-                        <div class="d-flex align-items center">
-                          <button
-                            class="btn btn-info btn-fab btn-icon btn-round"
-                          >
-                            <i class="tim-icons icon-pencil"></i>
-                          </button>
-                          <button
-                            class="btn btn-danger btn-fab btn-icon btn-round ml-2"
-                          >
-                            <i class="tim-icons icon-trash-simple"></i>
-                          </button>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>11/03/2020</td>
-                      <td>Telma</td>
-                      <td>R$ 09,00</td>
-                      <td>55,43</td>
-                      <td>
-                        <div class="d-flex align-items center">
-                          <button
-                            class="btn btn-info btn-fab btn-icon btn-round"
-                          >
-                            <i class="tim-icons icon-pencil"></i>
-                          </button>
-                          <button
-                            class="btn btn-danger btn-fab btn-icon btn-round ml-2"
-                          >
-                            <i class="tim-icons icon-trash-simple"></i>
-                          </button>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>4</td>
-                      <td>11/03/2020</td>
-                      <td>Martha</td>
-                      <td>R$ 09,00</td>
-                      <td>55,43</td>
-                      <td>
-                        <div class="d-flex align-items center">
-                          <button
-                            class="btn btn-info btn-fab btn-icon btn-round"
-                          >
-                            <i class="tim-icons icon-pencil"></i>
-                          </button>
-                          <button
-                            class="btn btn-danger btn-fab btn-icon btn-round ml-2"
-                          >
-                            <i class="tim-icons icon-trash-simple"></i>
-                          </button>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>5</td>
-                      <td>11/03/2020</td>
-                      <td>Cloud</td>
-                      <td>R$ 09,00</td>
-                      <td>55,43</td>
-                      <td>
-                        <div class="d-flex align-items center">
-                          <button
-                            class="btn btn-info btn-fab btn-icon btn-round"
-                          >
-                            <i class="tim-icons icon-pencil"></i>
-                          </button>
-                          <button
-                            class="btn btn-danger btn-fab btn-icon btn-round ml-2"
-                          >
-                            <i class="tim-icons icon-trash-simple"></i>
-                          </button>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr></tr>
-                  </tbody>
-                </table>
+            <div class="card mt-4 mt-lg-0">
+              <div class="card-header">
+                <h4 class="card-title">Adicionar novo produto</h4>
               </div>
-            </section>
+              <div class="card-body">
+                <form id="validate-form">
+                  <div class="form-row">
+                    <div class="col-6">
+                      <div class="form-group has-label">
+                        <div>
+                          <label for="description">Descrição</label>
+                        </div>
+                        <input
+                          id="description"
+                          name="description"
+                          class="form-control"
+                          type="text"
+                          required
+                          minlength="8"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="form-group has-label">
+                        <div>
+                          <label for="category">Categoria</label>
+                        </div>
+                        <input
+                          id="category"
+                          name="category"
+                          class="form-control"
+                          type="text"
+                          required
+                          minlength="4"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="form-group has-label">
+                        <div>
+                          <label for="cost-price">Preço de custo</label>
+                        </div>
+                        <input
+                          id="cost-price"
+                          name="cost-price"
+                          class="form-control"
+                          type="number"
+                          required
+                          step="0.01"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="form-group has-label">
+                        <div>
+                          <label for="sell-price">Preço de venda</label>
+                        </div>
+                        <input
+                          id="sell-price"
+                          name="sell-price"
+                          class="form-control"
+                          type="number"
+                          required
+                          step="0.01"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <button type="submit" class="btn btn-info btn-round">
+                    Salvar
+                  </button>
+                  <a
+                    href="./products.html"
+                    class="btn btn-default btn-round btn-simple"
+                  >
+                    Cancelar
+                  </a>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </main>
@@ -438,6 +374,43 @@
           token: 'ee6fab19c5a04ac1a32a645abde4613a',
           application: 'black-dashboard-free',
         });
+    </script>
+
+    <script src="./assets/js/plugins/jquery.validate.min.js"></script>
+    <script src="./assets/js/plugins/messages_pt_BR.js"></script>
+    <script>
+      function setFormValidation(id) {
+        $(id).validate({
+          lang: 'pt-BR',
+          highlight: function (element) {
+            $(element)
+              .closest('.form-group')
+              .removeClass('has-success')
+              .addClass('has-danger');
+            $(element)
+              .closest('.form-check')
+              .removeClass('has-success')
+              .addClass('has-danger');
+          },
+          success: function (element) {
+            $(element)
+              .closest('.form-group')
+              .removeClass('has-danger')
+              .addClass('has-success');
+            $(element)
+              .closest('.form-check')
+              .removeClass('has-danger')
+              .addClass('has-success');
+          },
+          errorPlacement: function (error, element) {
+            $(element).closest('.form-group').append(error);
+          },
+        });
+      }
+
+      $(document).ready(function () {
+        setFormValidation('#validate-form');
+      });
     </script>
   </body>
 </html>
