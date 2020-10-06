@@ -1,3 +1,9 @@
+main .container {
+  margin-left: 0px !important;
+  max-width: 1200px !important;
+  padding: 0px;
+}
+
 #logo {
   height: 100%;
   width: 2.75rem;

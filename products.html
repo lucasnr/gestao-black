@@ -23,6 +23,7 @@
     <!-- CSS Files -->
     <link href="./assets/css/black-dashboard.css?v=1.0.0" rel="stylesheet" />
     <link href="./assets/css/my-styles.css" rel="stylesheet" />
+    <link href="./assets/css/products.css" rel="stylesheet" />
   </head>
 
   <body class="">
@@ -47,14 +48,14 @@
 
               <div id="submenu" class="collapse">
                 <ul class="list-unstyled">
-                  <li><a href="#" class="active">Produtos</a></li>
+                  <li><a href="#">Produtos</a></li>
                   <li><a href="#">Clientes/Fornecedores</a></li>
                 </ul>
               </div>
             </li>
             <li>
               <a href="#">
-                <i class="tim-icons icon-bag-16"></i>
+                <i class="tim-icons icon-wallet-43"></i>
                 <p>Vendas</p>
               </a>
             </li>
@@ -111,7 +112,6 @@
                       ></i>
                     </div>
                     <b class="caret d-none d-lg-block d-xl-block"></b>
-                    <p class="d-lg-none">Log out</p>
                   </a>
                   <ul class="dropdown-menu dropdown-navbar">
                     <li class="nav-link">
@@ -146,10 +146,155 @@
             </div>
           </div>
         </nav>
-
         <!-- End Navbar -->
+
         <div class="content">
-          <h1 class="mt-4 mt-lg-0">Produtos</h1>
+          <div class="container">
+            <h1 class="mt-4 mt-lg-0">Produtos</h1>
+
+            <section
+              class="d-flex flex-column flex-sm-row align-items-sm-center"
+            >
+              <form
+                id="search-form"
+                class="d-flex align-items-center flex-grow-1 mr-sm-3"
+              >
+                <button type="submit">
+                  <i class="tim-icons icon-zoom-split mr-3 fa-2x"></i>
+                </button>
+                <input type="text" class="form-control" />
+              </form>
+
+              <a href="#" class="btn btn-info btn-round mt-3 mt-sm-0 ml-auto">
+                Adicionar produto
+              </a>
+            </section>
+
+            <section>
+              <div class="table-responsive">
+                <table class="table table-shopping mt-5">
+                  <thead>
+                    <tr>
+                      <th>Nome</th>
+                      <th>Categoria</th>
+                      <th>Preço de custo</th>
+                      <th>Preço de venda</th>
+                      <th>Lucro %</th>
+                      <th>Ações</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>A</td>
+                      <td>Roupa</td>
+                      <td>R$ 99,99</td>
+                      <td>R$ 09,00</td>
+                      <td>55,43</td>
+                      <td>
+                        <div class="d-flex align-items center">
+                          <button
+                            class="btn btn-info btn-fab btn-icon btn-round"
+                          >
+                            <i class="tim-icons icon-pencil"></i>
+                          </button>
+                          <button
+                            class="btn btn-danger btn-fab btn-icon btn-round ml-2"
+                          >
+                            <i class="tim-icons icon-trash-simple"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>B</td>
+                      <td>Comida</td>
+                      <td>R$ 99,99</td>
+                      <td>R$ 09,00</td>
+                      <td>55,43</td>
+                      <td>
+                        <div class="d-flex align-items center">
+                          <button
+                            class="btn btn-info btn-fab btn-icon btn-round"
+                          >
+                            <i class="tim-icons icon-pencil"></i>
+                          </button>
+                          <button
+                            class="btn btn-danger btn-fab btn-icon btn-round ml-2"
+                          >
+                            <i class="tim-icons icon-trash-simple"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>C</td>
+                      <td>Calçado</td>
+                      <td>R$ 99,99</td>
+                      <td>R$ 09,00</td>
+                      <td>55,43</td>
+                      <td>
+                        <div class="d-flex align-items center">
+                          <button
+                            class="btn btn-info btn-fab btn-icon btn-round"
+                          >
+                            <i class="tim-icons icon-pencil"></i>
+                          </button>
+                          <button
+                            class="btn btn-danger btn-fab btn-icon btn-round ml-2"
+                          >
+                            <i class="tim-icons icon-trash-simple"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>D</td>
+                      <td>Bebida</td>
+                      <td>R$ 99,99</td>
+                      <td>R$ 09,00</td>
+                      <td>55,43</td>
+                      <td>
+                        <div class="d-flex align-items center">
+                          <button
+                            class="btn btn-info btn-fab btn-icon btn-round"
+                          >
+                            <i class="tim-icons icon-pencil"></i>
+                          </button>
+                          <button
+                            class="btn btn-danger btn-fab btn-icon btn-round ml-2"
+                          >
+                            <i class="tim-icons icon-trash-simple"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>E</td>
+                      <td>Eletrônico</td>
+                      <td>R$ 99,99</td>
+                      <td>R$ 09,00</td>
+                      <td>55,43</td>
+                      <td>
+                        <div class="d-flex align-items center">
+                          <button
+                            class="btn btn-info btn-fab btn-icon btn-round"
+                          >
+                            <i class="tim-icons icon-pencil"></i>
+                          </button>
+                          <button
+                            class="btn btn-danger btn-fab btn-icon btn-round ml-2"
+                          >
+                            <i class="tim-icons icon-trash-simple"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </div>
         </div>
       </main>
     </div>

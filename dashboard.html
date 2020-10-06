@@ -54,7 +54,7 @@
             </li>
             <li>
               <a href="#">
-                <i class="tim-icons icon-bag-16"></i>
+                <i class="tim-icons icon-wallet-43"></i>
                 <p>Vendas</p>
               </a>
             </li>
@@ -111,7 +111,6 @@
                       ></i>
                     </div>
                     <b class="caret d-none d-lg-block d-xl-block"></b>
-                    <p class="d-lg-none">Log out</p>
                   </a>
                   <ul class="dropdown-menu dropdown-navbar">
                     <li class="nav-link">
@@ -146,87 +145,89 @@
             </div>
           </div>
         </nav>
-
         <!-- End Navbar -->
+
         <div class="content">
-          <h1 class="mt-4 mt-lg-0">Bom dia, Usuário</h1>
-          <h4 class="mb-4">
-            Aqui estão as informações mais <br />importantes do seu negócio
-          </h4>
+          <div class="container">
+            <h1 class="mt-4 mt-lg-0">Bom dia, Usuário</h1>
+            <h4 class="mb-4">
+              Aqui estão as informações mais <br />importantes do seu negócio
+            </h4>
 
-          <table class="table">
-            <thead>
-              <tr>
-                <th>Faturamentos</th>
-                <th>Nº de Vendas</th>
-                <th>Valor médio vendas</th>
-                <th>Novos Clientes</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-              </tr>
-            </tbody>
-          </table>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Faturamentos</th>
+                  <th>Nº de Vendas</th>
+                  <th>Valor médio vendas</th>
+                  <th>Novos Clientes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+              </tbody>
+            </table>
 
-          <div class="row mb-3 align-items-end">
-            <div class="col-sm-4">
-              <h4 class="mb-1">Total Vendas</h4>
-              <h4 class="m-0"><strong>Performance</strong></h4>
+            <div class="row mb-3 align-items-end">
+              <div class="col-sm-4">
+                <h4 class="mb-1">Total Vendas</h4>
+                <h4 class="m-0"><strong>Performance</strong></h4>
+              </div>
+
+              <div class="col-sm-8 d-flex justify-content-end">
+                <div class="form-check form-check-radio form-check-inline">
+                  <label class="form-check-label">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="period"
+                      value="semanal"
+                      checked
+                    />
+                    Semanal
+                    <span class="form-check-sign"></span>
+                  </label>
+                </div>
+                <div class="form-check form-check-radio form-check-inline mx-2">
+                  <label class="form-check-label">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="period"
+                      value="mensal"
+                    />
+                    Mensal
+                    <span class="form-check-sign"></span>
+                  </label>
+                </div>
+                <div class="form-check form-check-radio form-check-inline">
+                  <label class="form-check-label">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="period"
+                      value="anual"
+                    />
+                    Anual
+                    <span class="form-check-sign"></span>
+                  </label>
+                </div>
+              </div>
             </div>
 
-            <div class="col-sm-8 d-flex justify-content-end">
-              <div class="form-check form-check-radio form-check-inline">
-                <label class="form-check-label">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="period"
-                    value="semanal"
-                    checked
-                  />
-                  Semanal
-                  <span class="form-check-sign"></span>
-                </label>
+            <section class="card card-chart">
+              <div class="card-body">
+                <div class="chart-area">
+                  <canvas id="chartLinePurple"></canvas>
+                </div>
               </div>
-              <div class="form-check form-check-radio form-check-inline mx-2">
-                <label class="form-check-label">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="period"
-                    value="mensal"
-                  />
-                  Mensal
-                  <span class="form-check-sign"></span>
-                </label>
-              </div>
-              <div class="form-check form-check-radio form-check-inline">
-                <label class="form-check-label">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="period"
-                    value="anual"
-                  />
-                  Anual
-                  <span class="form-check-sign"></span>
-                </label>
-              </div>
-            </div>
+            </section>
           </div>
-
-          <section class="card card-chart">
-            <div class="card-body">
-              <div class="chart-area">
-                <canvas id="chartLinePurple"></canvas>
-              </div>
-            </div>
-          </section>
         </div>
       </main>
     </div>
