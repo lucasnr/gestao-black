@@ -40,7 +40,7 @@
                 <p>Visão Geral</p>
               </a>
             </li>
-            <li class="active">
+            <li>
               <a data-toggle="collapse" href="#submenu" aria-expanded="false">
                 <i class="tim-icons icon-bullet-list-67"></i>
                 <p>Cadastros <b class="caret"></b></p>
@@ -53,8 +53,8 @@
                 </ul>
               </div>
             </li>
-            <li>
-              <a href="./sales.html">
+            <li class="active">
+              <a href="#">
                 <i class="tim-icons icon-wallet-43"></i>
                 <p>Vendas</p>
               </a>
@@ -147,9 +147,162 @@
 
         <div class="content">
           <div class="container">
-            <div class="card mt-4 mt-lg-0">
+            <h1 class="mt-4 mt-lg-0">Vendas</h1>
+
+            <section
+              class="d-flex flex-column flex-sm-row align-items-sm-center"
+            >
+              <form
+                id="search-form"
+                class="d-flex align-items-center flex-grow-1 mr-sm-3"
+              >
+                <button type="submit">
+                  <i class="tim-icons icon-zoom-split mr-3 fa-2x"></i>
+                </button>
+                <input type="text" class="form-control" />
+              </form>
+
+              <a
+                href="./new-sale.html"
+                class="btn btn-info btn-round mt-3 mt-sm-0 ml-auto"
+              >
+                Adicionar venda
+              </a>
+            </section>
+
+            <section>
+              <div class="table-responsive">
+                <table class="table table-shopping mt-5">
+                  <thead>
+                    <tr>
+                      <th>Id</th>
+                      <th>Data</th>
+                      <th>Cliente</th>
+                      <th>Total</th>
+                      <th>Lucro %</th>
+                      <th>Ações</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>11/03/2020</td>
+                      <td>John</td>
+                      <td>R$ 09,00</td>
+                      <td>55,43</td>
+                      <td>
+                        <div class="d-flex align-items center">
+                          <a
+                            href="./edit-sale.html"
+                            class="btn btn-info btn-fab btn-icon btn-round"
+                          >
+                            <i class="tim-icons icon-pencil"></i>
+                          </a>
+                          <button
+                            class="btn btn-danger btn-fab btn-icon btn-round ml-2"
+                          >
+                            <i class="tim-icons icon-trash-simple"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>11/03/2020</td>
+                      <td>Roger</td>
+                      <td>R$ 09,00</td>
+                      <td>55,43</td>
+                      <td>
+                        <div class="d-flex align-items center">
+                          <a
+                            href="./edit-sale.html"
+                            class="btn btn-info btn-fab btn-icon btn-round"
+                          >
+                            <i class="tim-icons icon-pencil"></i>
+                          </a>
+                          <button
+                            class="btn btn-danger btn-fab btn-icon btn-round ml-2"
+                          >
+                            <i class="tim-icons icon-trash-simple"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>11/03/2020</td>
+                      <td>Telma</td>
+                      <td>R$ 09,00</td>
+                      <td>55,43</td>
+                      <td>
+                        <div class="d-flex align-items center">
+                          <a
+                            href="./edit-sale.html"
+                            class="btn btn-info btn-fab btn-icon btn-round"
+                          >
+                            <i class="tim-icons icon-pencil"></i>
+                          </a>
+                          <button
+                            class="btn btn-danger btn-fab btn-icon btn-round ml-2"
+                          >
+                            <i class="tim-icons icon-trash-simple"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>11/03/2020</td>
+                      <td>Martha</td>
+                      <td>R$ 09,00</td>
+                      <td>55,43</td>
+                      <td>
+                        <div class="d-flex align-items center">
+                          <a
+                            href="./edit-sale.html"
+                            class="btn btn-info btn-fab btn-icon btn-round"
+                          >
+                            <i class="tim-icons icon-pencil"></i>
+                          </a>
+                          <button
+                            class="btn btn-danger btn-fab btn-icon btn-round ml-2"
+                          >
+                            <i class="tim-icons icon-trash-simple"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>11/03/2020</td>
+                      <td>Cloud</td>
+                      <td>R$ 09,00</td>
+                      <td>55,43</td>
+                      <td>
+                        <div class="d-flex align-items center">
+                          <a
+                            href="./edit-sale.html"
+                            class="btn btn-info btn-fab btn-icon btn-round"
+                          >
+                            <i class="tim-icons icon-pencil"></i>
+                          </a>
+                          <button
+                            class="btn btn-danger btn-fab btn-icon btn-round ml-2"
+                          >
+                            <i class="tim-icons icon-trash-simple"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <div class="card mt-2 mt-lg-0">
               <div class="card-header">
-                <h4 class="card-title">Adicionar novo produto</h4>
+                <h4 class="card-title">Adicionar nova venda</h4>
               </div>
               <div class="card-body">
                 <form id="validate-form">
@@ -157,26 +310,11 @@
                     <div class="col-6">
                       <div class="form-group has-label">
                         <div>
-                          <label for="description">Descrição</label>
+                          <label for="product">Produto</label>
                         </div>
                         <input
-                          id="description"
-                          name="description"
-                          class="form-control"
-                          type="text"
-                          required
-                          minlength="8"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-6">
-                      <div class="form-group has-label">
-                        <div>
-                          <label for="category">Categoria</label>
-                        </div>
-                        <input
-                          id="category"
-                          name="category"
+                          id="product"
+                          name="product"
                           class="form-control"
                           type="text"
                           required
@@ -187,32 +325,43 @@
                     <div class="col-6">
                       <div class="form-group has-label">
                         <div>
-                          <label for="cost-price">Preço de custo</label>
+                          <label for="amount">Quantidade</label>
                         </div>
                         <input
-                          id="cost-price"
-                          name="cost-price"
+                          id="amount"
+                          name="amount"
                           class="form-control"
                           type="number"
                           required
-                          step="0.01"
-                          min="0"
+                          min="1"
                         />
                       </div>
                     </div>
                     <div class="col-6">
                       <div class="form-group has-label">
                         <div>
-                          <label for="sell-price">Preço de venda</label>
+                          <label for="payment">Pagamento</label>
                         </div>
                         <input
-                          id="sell-price"
-                          name="sell-price"
+                          id="payment"
+                          name="payment"
                           class="form-control"
-                          type="number"
+                          type="text"
                           required
-                          step="0.01"
-                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="form-group has-label">
+                        <div>
+                          <label for="tracking">Rastreamento</label>
+                        </div>
+                        <input
+                          id="tracking"
+                          name="tracking"
+                          class="form-control"
+                          type="text"
+                          required
                         />
                       </div>
                     </div>
@@ -222,7 +371,7 @@
                     Salvar
                   </button>
                   <a
-                    href="./products.html"
+                    href="./sales.html"
                     class="btn btn-default btn-round btn-simple"
                   >
                     Cancelar
