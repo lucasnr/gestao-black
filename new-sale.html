@@ -371,39 +371,6 @@
 
     <script src="./assets/js/plugins/jquery.validate.min.js"></script>
     <script src="./assets/js/plugins/messages_pt_BR.js"></script>
-    <script>
-      function setFormValidation(id) {
-        $(id).validate({
-          lang: 'pt-BR',
-          highlight: function (element) {
-            $(element)
-              .closest('.form-group')
-              .removeClass('has-success')
-              .addClass('has-danger');
-            $(element)
-              .closest('.form-check')
-              .removeClass('has-success')
-              .addClass('has-danger');
-          },
-          success: function (element) {
-            $(element)
-              .closest('.form-group')
-              .removeClass('has-danger')
-              .addClass('has-success');
-            $(element)
-              .closest('.form-check')
-              .removeClass('has-danger')
-              .addClass('has-success');
-          },
-          errorPlacement: function (error, element) {
-            $(element).closest('.form-group').append(error);
-          },
-        });
-      }
-
-      $(document).ready(function () {
-        setFormValidation('#validate-form');
-      });
-    </script>
+    <script src="./assets/js/form-validation.js"></script>
   </body>
 </html>

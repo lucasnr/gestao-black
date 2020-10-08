@@ -22,122 +22,132 @@
     <link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
     <!-- CSS Files -->
     <link href="./assets/css/black-dashboard.css?v=1.0.0" rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/css/full-page-form.css" />
+    <link href="./assets/css/my-styles.css" rel="stylesheet" />
   </head>
 
-  <body class="login-page">
-    <div
-      class="wrapper wrapper-full-page d-flex flex-column justify-content-center"
-    >
-      <div class="full-page -page">
-        <div class="content">
-          <div class="container">
-            <div class="col-lg-4 col-md-6 ml-auto mr-auto">
-              <form role="form">
-                <div class="card card-login card-white">
-                  <header class="card-header">
-                    <img src="./assets/img/card-primary.png" alt="" />
-                    <h1 class="card-title">Register</h1>
-                  </header>
+  <body class="">
+    <div class="wrapper">
+      <main
+        class="main-panel d-flex align-items-center justify-content-center p-3 p-sm-4"
+      >
+        <div class="container mx-0">
+          <div class="card">
+            <form
+              role="form"
+              method="GET"
+              action="./dashboard.html"
+              novalidate="novalidate"
+              id="validate-form"
+            >
+              <header class="card-header">
+                <h5 class="title">Cadastro</h5>
 
-                  <div class="card-body">
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-                        <div class="input-group-text">
-                          <i class="tim-icons icon-single-02"></i>
-                        </div>
+                <h6 class="card-category">
+                  Crie sua conta ou <a href="./login.html">entre</a> se já
+                  possuir uma.
+                </h6>
+              </header>
+
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-6 col-lg-5 col-xl-4">
+                    <div class="form-group has-label">
+                      <div>
+                        <label for="id_username">Usuário</label>
                       </div>
                       <input
                         type="text"
                         name="username"
-                        placeholder="Usúario"
+                        placeholder="Usuário"
                         class="form-control"
-                        required=""
+                        required
                         id="id_username"
                       />
                     </div>
-                    <span class="text-error"></span>
+                  </div>
+                </div>
+                <span class="text-danger"></span>
 
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-                        <div class="input-group-text">
-                          <i class="tim-icons icon-email-85"></i>
-                        </div>
+                <div class="row">
+                  <div class="col-md-6 col-lg-5 col-xl-4">
+                    <div class="form-group has-label">
+                      <div>
+                        <label for="id_email">E-mail</label>
                       </div>
                       <input
                         type="email"
                         name="email"
                         placeholder="E-mail"
                         class="form-control"
-                        required=""
+                        required
                         id="id_email"
                       />
                     </div>
-                    <span class="text-error"></span>
+                  </div>
+                </div>
+                <span class="text-danger"></span>
 
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-                        <div class="input-group-text">
-                          <i class="tim-icons icon-lock-circle"></i>
-                        </div>
+                <div class="row">
+                  <div class="col-md-6 col-lg-5 col-xl-4">
+                    <div class="form-group has-label">
+                      <div>
+                        <label for="id_password1">Senha</label>
                       </div>
                       <input
                         type="password"
                         name="password1"
                         placeholder="Senha"
                         class="form-control"
-                        required=""
+                        required
                         id="id_password1"
                       />
                     </div>
-                    <span class="text-error"></span>
+                  </div>
+                </div>
+                <span class="text-danger"></span>
 
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-                        <div class="input-group-text">
-                          <i class="tim-icons icon-lock-circle"></i>
-                        </div>
+                <div class="row">
+                  <div class="col-md-6 col-lg-5 col-xl-4">
+                    <div class="form-group has-label">
+                      <div>
+                        <label for="id_password2">Confirme sua senha</label>
                       </div>
                       <input
                         type="password"
                         name="password2"
-                        placeholder="Confirme sua senha"
+                        placeholder="Confirme a senha"
                         class="form-control"
-                        required=""
+                        required
                         id="id_password2"
                       />
                     </div>
-                    <span class="text-error"></span>
                   </div>
-
-                  <div class="text-center">
-                    <button
-                      type="submit"
-                      name="login"
-                      class="btn btn-primary my-4"
-                    >
-                      Criar conta
-                    </button>
-                  </div>
-
-                  <footer class="card-footer">
-                    <div class="pull-right">
-                      <h6>
-                        <a
-                          href="./login.html"
-                          class="link footer-link font-weight-bold"
-                        >
-                          Entrar
-                        </a>
-                      </h6>
-                    </div>
-                  </footer>
                 </div>
-              </form>
-            </div>
+                <span class="text-danger"></span>
+              </div>
+
+              <footer class="card-footer">
+                <div
+                  class="d-flex flex-column flex-sm-row align-items-sm-center"
+                >
+                  <button
+                    type="submit"
+                    name="register"
+                    class="btn btn-fill btn-primary"
+                  >
+                    Criar conta
+                  </button>
+
+                  <div class="mt-2 mt-sm-0 ml-sm-2">
+                    Já tem uma conta?
+                    <a href="./login.html" class="text-primary">Entrar</a>
+                  </div>
+                </div>
+              </footer>
+            </form>
           </div>
         </div>
-      </div>
+      </main>
     </div>
 
     <!--   Core JS Files   -->
@@ -277,5 +287,9 @@
           application: 'black-dashboard-free',
         });
     </script>
+
+    <script src="./assets/js/plugins/jquery.validate.min.js"></script>
+    <script src="./assets/js/plugins/messages_pt_BR.js"></script>
+    <script src="./assets/js/form-validation.js"></script>
   </body>
 </html>
