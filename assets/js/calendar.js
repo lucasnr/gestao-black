@@ -1,4 +1,19 @@
 const modal = $('#modal');
+const value = modal.find('#value');
+
+modal.find('#type').change((e) => {
+  if(e.target.value === 'custo')
+    value.css('display', 'block');
+  else
+    value.css('display', 'none');
+});
+
+function showModal() {
+  modal.find('form')[0].reset();
+  value.css('display', 'none');
+  modal.modal();
+}
+$('#calendar-header-button').click(showModal);
 
 let today = new Date();
 let currentMonth = today.getMonth();
@@ -78,9 +93,9 @@ function showCalendar(month, year) {
         cell.appendChild(day);
 
         cell.onclick = function () {
-          modal.find('#modal-date').val(`${year}-${month + 1}-${this.date}`);
-          modal.modal();
-        }.bind({ date });
+          showModal();
+          modal.find('#modal-date').val(`${year}-${month + 1}-${this.day}T12:00`);
+        }.bind({ day: String(date).padStart(2, '0') });
 
         row.appendChild(cell);
         date++;
